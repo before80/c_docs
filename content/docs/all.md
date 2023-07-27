@@ -9486,12 +9486,10 @@ which expand to integer constant expressions with distinct values, suitable for 
 ``` c
 #include <locale.h>
 char *setlocale(int category, const char *locale);
+```
+
 227)ISO/IEC 9945–2 specifies locale and charmap formats that can be used to specify locales for C.
 228)See "future library directions" (7.31.6).
-​Library § 7.11.1.1
-
-
-```
 
 **Description**
 
@@ -10835,9 +10833,7 @@ long double tgammal(long double x);
 
 **Description**
 
-The tgamma functions compute the gamma function of x. A domain error or pole error may occur if
-x is a negative integer or zero. A range error occurs if the magnitude of x is too large and may occur
-if the magnitude of x is too small.
+The tgamma functions compute the gamma function of x. A domain error or pole error may occur if x is a negative integer or zero. A range error occurs if the magnitude of x is too large and may occur if the magnitude of x is too small.
 
 
 **Returns**
@@ -10899,9 +10895,8 @@ long double nearbyintl(long double x);
 
 **Description**
 
-The nearbyint functions round their argument to an integer value in floating-point format, using
-the current rounding direction and without raising the "inexact" floating-point exception.
-Library § 7.12.9.3
+The nearbyint functions round their argument to an integer value in floating-point format, using the current rounding direction and without raising the "inexact" floating-point exception.
+
 
 
 
@@ -10922,8 +10917,7 @@ long double rintl(long double x);
 
 **Description**
 
-The rint functions differ from the nearbyint functions (7.12.9.3) only in that the rint functions
-may raise the "inexact" floating-point exception if the result differs in value from the argument.
+The rint functions differ from the nearbyint functions (7.12.9.3) only in that the rint functions may raise the "inexact" floating-point exception if the result differs in value from the argument.
 
 
 **Returns**
@@ -10946,9 +10940,7 @@ long long int llrintl(long double x);
 
 **Description**
 
-The lrint and llrint functions round their argument to the nearest integer value, rounding
-according to the current rounding direction. If the rounded value is outside the range of the return
-type, the numeric result is unspecified and a domain error or range error may occur.
+The lrint and llrint functions round their argument to the nearest integer value, rounding according to the current rounding direction. If the rounded value is outside the range of the return type, the numeric result is unspecified and a domain error or range error may occur.
 
 
 **Returns**
@@ -10968,8 +10960,7 @@ long double roundl(long double x);
 
 **Description**
 
-The round functions round their argument to the nearest integer value in floating-point format,
-rounding halfway cases away from zero, regardless of the current rounding direction.
+The round functions round their argument to the nearest integer value in floating-point format,rounding halfway cases away from zero, regardless of the current rounding direction.
 
 
 **Returns**
@@ -10996,10 +10987,7 @@ long long int llroundl(long double x);
 
 **Description**
 
-The lround and llround functions round their argument to the nearest integer value, rounding
-halfway cases away from zero, regardless of the current rounding direction. If the rounded value is
-outside the range of the return type, the numeric result is unspecified and a domain error or range
-error may occur.
+The lround and llround functions round their argument to the nearest integer value, rounding halfway cases away from zero, regardless of the current rounding direction. If the rounded value is outside the range of the return type, the numeric result is unspecified and a domain error or range error may occur.
 
 
 **Returns**
@@ -11019,8 +11007,7 @@ long double truncl(long double x);
 
 **Description**
 
-The trunc functions round their argument to the integer value, in floating format, nearest to but no
-larger in magnitude than the argument.
+The trunc functions round their argument to the integer value, in floating format, nearest to but no larger in magnitude than the argument.
 
 
 **Returns**
